@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="node_modules/angular/angular.js"></script>
-<script src="node_modules/ui-router/release/angular-ui-router.min.js"></script>
+<!-- <script src="node_modules/ui-router/release/angular-ui-router.min.js"></script> -->
 <!-- home css -->
 <link rel="stylesheet" type="text/css" href="css/home.css" />
 </head>
@@ -38,38 +38,49 @@
                 <button class="btn btn2">sign-in</button>
             </div>
         </header>
+
+
+
         <div class="nav">
             <input type="checkbox" id="menu" />
-            <img src="arrow.png" class="arrow"> <label for="menu" id="nav-icon"> &#9776;</label>
+            <label for="menu" id="nav-icon">&#9776;</label>
+
 
             <div class="multi-level">
                 <div class="item">
                     <input type="checkbox" id="A" />
-                    <label for="A">How It Works</label>
-                </div>
+                    <img src="img/arrow.png" class="arrow"><label for="A">How It Works</label>
 
+
+                </div>
                 <div class="item">
-
                     <input type="checkbox" id="B" />
-                    <label for="B">Apis</label>
+                    <img src="images/Arrow.png" class="arrow"><label for="B">Apis</label>
+
+                    <ul>
+                        <li>
+                            <div class="sub-item">
+                                <input type="checkbox" id="B-A" />
+                                <img src="img/arrow.png" class="arrow"><label for="B-A">Create Api</label>
+
+                                <ul>
+                                    <li><a href="#">Create</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">Update</a></li>
+                                    <li><a href="#">Retrieve</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+
                 </div>
-                <ul>
-                    <li>
-                        <div class="sub-item">
-                            <input type="checkbox" id="B-A" />
-                            <label for="B-A">How To Create Apis</label>
-                            <ul>
-                                <li><a href="#">Create</a></li>
-                                <li><a href="#">Update</a></li>
-                                <li><a href="#">Delete</a></li>
-                                <li><a href="#">Reterive</a></li>
-                            </ul>
-                        </div>
-                    </li>
 
 
-                </ul>
-            </div>
+
+
+
 </body>
 
 </html>
